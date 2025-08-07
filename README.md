@@ -1,9 +1,8 @@
 ## 🧠 Inklu – Projeto Psicossocial
 ---
 **Status: Em desenvolvimento**
-
-Atualmente, esta é uma versão estática, focada na apresentação visual da interface. O site é responsivo e se adapta a diferentes tamanhos de tela.
 ---
+Atualmmente, esta é uma versão estática, focada na apresentação visual da interface. O site é responsivo e se adapta a diferentes tamanhos de tela. 
 
 **Próximos passos**
 - Implementar sistema de busca e filtragem por ONGs
@@ -13,5 +12,4 @@ Atualmente, esta é uma versão estática, focada na apresentação visual da in
 ---
 
 **Contribuição**
-
 Este projeto está aberto a feedbacks construtivos e sugestões!
