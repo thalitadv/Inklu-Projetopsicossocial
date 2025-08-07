@@ -1,0 +1,485 @@
+:root {
+  /* Base Colors */
+  --color-gray: #48494b;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+   /* Brand Colors */
+  --color-primary: #031236;
+  --color-secondary: #213174;
+  --color-light: #7a8fc9;
+  --color-background-soft: #e2e2dd;
+  --color-hover-menu: #e2e2a0;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: var(--color-secondary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: calc(90vw - 30px);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--color-hover-menu);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--color-white);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Main */
+.main-container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+
+.top-left {
+  top: -6rem;
+  left: -6rem;
+  width: 25rem;
+  height: 25rem;
+  background: linear-gradient(80deg, var(--color-primary), var(--color-secondary));
+}
+
+.bottom-right {
+  bottom: 0;
+  right: -6rem;
+  width: 31rem;
+  height: 31rem;
+  background: radial-gradient(circle, var(--color-primary), var(--color-secondary), transparent);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+    font-size: 1.4rem;
+    color: var(--color-gray);
+}
+
+h1 span {
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary) , var(--color-light));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 60vh;
+  padding: 6rem 0 2rem 6rem;
+  background: radial-gradient(circle at top left, var(--color-background-soft));
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  left: 15rem;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.hero-image {
+  position: absolute;
+  right: 8rem;
+}
+
+.hero-image img {     
+  display: flex;
+  max-width: 48rem;
+  height: auto;
+}
+
+.hero-image-2 {
+    position: absolute;
+    right: 1rem;
+}
+
+.hero-image-2 img {
+     max-width: 10rem;
+}
+
+.hero-image-3 {
+    position: absolute;
+    right: 10rem;
+    top: 6rem;
+}
+
+.hero-image-3 img {
+     max-width: 8rem;
+}
+
+.hero-image-4 {
+    position: absolute;
+    right: 6rem;
+    bottom: 2rem;
+}
+
+.hero-image-4 img {
+     max-width: 7rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.ongs-button,
+.guia-button {
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.ongs-button {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: var(--color-white);
+}
+
+.guia-button {
+  background: linear-gradient(135deg, var(--color-light), var(--color-white));
+  color: var(--color-black);
+}
+
+.ongs-button:hover,
+.guia-button:hover {
+  transform: scale(1.05);
+}
+
+/* ONG Cards */
+.ongs-section {
+  background: var(--color-primary);
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  justify-items: center;
+}
+
+.ong-card {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+}
+
+.ong-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.ong-card img {
+  width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.ong-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+  margin-bottom: 0.5rem;
+}
+
+.ong-card p {
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+}
+
+.ong-button {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: var(--color-white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.ong-button:hover {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-light), var(--color-secondary));
+}
+
+/* Mental Health Info */
+.mental-section {
+  background-color: var(--color-background-soft);
+  border-radius: 3rem;
+  margin-top: 2rem;
+  color: var(--color-black);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.mental-section h2 {
+  margin-bottom: 2rem;
+}
+
+.info {
+  max-width: 50vw;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
+.bottom-text {
+  max-width: 40vw;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* About Section */
+.about {
+  background-color: var(--color-primary);
+  padding: 3.5rem 1.25rem;
+  margin-top: 2rem;
+  border-radius: 2.5rem;
+}
+
+.about-wrapper {
+  max-width: 62.5rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1 1 22.5rem;
+}
+
+.about-text h2 {
+  font-size: 1.75rem;
+  color: var(--color-white);
+  margin-bottom: 1.25rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+.about-text .email {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+
+.about-text a {
+  color: var(--color-light);
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex: 1 1 22.5rem;
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-secondary);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-gray);
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-form button {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--color-gray);
+}
+
+/* Footer */
+footer {
+  background: var(--color-white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 1580px) {
+  .hero {
+    flex-direction: column;
+    padding: 4rem 2rem;
+    height: auto;
+  }
+
+  .hero-content {
+    position: static;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-image,
+  .hero-image-2,
+  .hero-image-3,
+  .hero-image-4 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 90vw;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ongs-button,
+  .guia-button {
+    width: 100%;
+    text-align: center;
+  }
+}
