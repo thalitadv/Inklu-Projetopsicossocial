@@ -1,174 +1,1053 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inklu| Encontre ONGS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inklu</title>
+
+  <link rel="icon" type="image/png" href="img/logoinklu.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav>
-      <div class="logo">Inklu</div>
-       <div class="menu-toggle" id="menu-toggle">☰</div>
-      <div class="nav-links" id="nav-links">
-          <a href="#">Início</a>
-          <a href="#ongs">ONGs</a>
-          <a href="#guia">Guia</a>
-          <a href="#about">Sobre Nós</a>
+  <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container-navbar">
+
+    <a href="#inicio" class="logo">
+      <div class="logo-icone">
+        <i class="fa-solid fa-brain"></i>
       </div>
-  </nav>
 
-  <main class="main-container">
+      <span class="logo-texto">Inklu</span>
+    </a>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="circle top-left"></div>
-        <div class="circle bottom-right"></div>
+    <div class="links-navbar" id="linksNavbar">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#instituicoes">Instituições</a>
+      <a href="#conteudos">Conteúdos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#faq">FAQ</a>
+    </div>
 
-        <div class="hero-content">
-            <h1><span>Conectando</span> você a quem cuida.</h1>
-            <p class="tagline">Encontre ONGs que fornecem psicoterapia gratuita, <br> escuta com suporte e acolhimento.</p>
-            <div class="hero-buttons">
-              <a href="#ongs"></a><button class="ongs-button">Conheça ONGs</button></a>
-              <a href="#guia"></a><button class="guia-button">Guia de saúde emocional</button></a>
+    <div class="acoes-navbar">
+      <a href="#contato" class="link-contato">Fale conosco</a>
+
+      <a href="#instituicoes" class="botao-navbar">
+        Encontrar instituições
+      </a>
+    </div>
+
+    <button class="botao-menu" id="botaoMenu" type="button" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+</nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container-hero">
+
+        <div class="conteudo-hero">
+
+          <h1>
+            Conectando você a quem cuida da sua
+            <span>saúde mental.</span>
+          </h1>
+
+          <p>
+            Conectamos você a instituições que oferecem acolhimento,
+            orientação e apoio emocional gratuito.
+          </p>
+
+          <div class="botoes-hero">
+            <a href="#instituicoes" class="botao-primario">
+              Encontrar instituições
+            </a>
+
+            <a href="#conteudos" class="botao-secundario">
+              Guia emocional
+            </a>
+          </div>
+
+          <div class="destaques-hero">
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Atendimento gratuito
             </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Instituições verificadas
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Sem cadastro
+            </div>
+          </div>
+
         </div>
 
-          <div class="hero-image">
-              <img src="img/warm-hug.png" alt="Abraço acolhedor">
-          </div>
-          <div class="hero-image-2">
-              <img src="img/ong.png" alt="ONG - Todos juntos">
-          </div>
-          <div class="hero-image-3">
-              <img src="img/doctor.png" alt="Médica segurando um cérebro">
-          </div>
-          <div class="hero-image-4">
-              <img src="img/self-hug.png" alt="Mulher se abraçando">
-          </div>
+        <div class="imagem-hero">
+          <img src="img/hero.png" alt="Grupo de pessoas unidas em círculo">
+        </div>
+
+      </div>
     </section>
 
-    <!-- ONGS -->
-    <section id="ongs" class="ongs-section">
-      <div class="ong-card">
-        <img src="img/cvv.png" alt="CVV">
-        <h3>CVV</h3>
-        <p>Centro de Valorização da Vida é uma associação civil sem fins lucrativos brasileira, oferecendo atendimento 24 horas por voluntários capacitados</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="secao-passos">
+      <div class="container-passos">
+
+        <span class="tag-secao">
+          COMO FUNCIONA
+        </span>
+
+        <h2>
+          Da busca ao acolhimento em <br>
+          4 passos
+        </h2>
+
+        <p class="descricao-secao">
+          Pensamos cada etapa para que encontrar apoio seja simples,
+          claro e sem barreiras.
+        </p>
+
+        <div class="grid-passos">
+
+          <article class="card-passo">
+            <div class="cabecalho-passo">
+              <div class="icone-passo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+
+              <span>01</span>
+            </div>
+
+            <h3>Escolha uma instituição</h3>
+
+            <p>
+              Use os filtros por público, tipo de atendimento
+              e palavras-chave para encontrar opções.
+            </p>
+          </article>
+
+          <article class="card-passo">
+            <div class="cabecalho-passo">
+              <div class="icone-passo">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+
+              <span>02</span>
+            </div>
+
+            <h3>Conheça os serviços</h3>
+
+            <p>
+              Veja descrição, horários, formas de contato e
+              para quem cada instituição atende.
+            </p>
+          </article>
+
+          <article class="card-passo">
+            <div class="cabecalho-passo">
+              <div class="icone-passo">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+
+              <span>03</span>
+            </div>
+
+            <h3>Entre em contato</h3>
+
+            <p>
+              Fale diretamente por telefone, e-mail, WhatsApp
+              ou redes sociais.
+            </p>
+          </article>
+
+          <article class="card-passo">
+            <div class="cabecalho-passo">
+              <div class="icone-passo">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+
+              <span>04</span>
+            </div>
+
+            <h3>Receba acolhimento</h3>
+
+            <p>
+              Inicie o atendimento gratuito e siga sendo apoiado
+              por uma rede confiável.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+<!-- INSTITUIÇÕES -->
+<section id="instituicoes" class="instituicoes">
+  <div class="container-instituicoes">
+
+    <div class="titulo-secao">
+      <span>REDE DE APOIO</span>
+
+      <h2>Instituições disponíveis</h2>
+
+      <p>
+        Busque ou filtre pelos serviços que melhor atendem ao que você
+        precisa agora.
+      </p>
+    </div>
+
+    <div class="cabecalho-instituicoes">
+      <div></div>
+
+      <div class="contador-instituicoes">
+        8 instituições
+      </div>
+    </div>
+
+    <div class="filtros">
+      <input
+        id="campoBusca"
+        type="text"
+        placeholder="Ex: ansiedade, jovens, psicoterapia..."
+      >
+
+      <select id="filtroPublico">
+        <option value="todos">Todos os públicos</option>
+        <option value="jovens">Jovens</option>
+        <option value="mulheres">Mulheres</option>
+        <option value="criancas">Crianças</option>
+        <option value="familias">Famílias</option>
+        <option value="estudantes">Estudantes</option>
+        <option value="diversidade">Diversidade</option>
+      </select>
+
+      <select id="filtroTipo">
+        <option value="todos">Todos</option>
+        <option value="online">Online</option>
+        <option value="presencial">Presencial</option>
+      </select>
+    </div>
+
+    <div class="grid-instituicoes">
+
+      <!-- CAPS -->
+      <div
+        class="card-instituicao"
+        data-publico="jovens"
+        data-tipo="presencial"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/caps.png"
+            alt="Logo do CAPS"
+            class="icone-instituicao"
+          >
+
+          <span class="selo verde">Presencial</span>
+        </div>
+
+        <h3>CAPS — Centro de Atenção Psicossocial</h3>
+
+        <p>
+          Centros de Atenção Psicossocial que oferecem atendimento
+          especializado em saúde mental.
+        </p>
+
+        <div class="tags">
+          <span>Adultos</span>
+          <span>Jovens</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="CAPS — Centro de Atenção Psicossocial"
+          data-descricao="Os CAPS são unidades do SUS especializadas em saúde mental. Oferecem acolhimento, atendimento psicológico, psiquiátrico, atividades em grupo e suporte familiar."
+          data-telefone="Consulte a unidade CAPS mais próxima."
+          data-endereco="Diversas unidades em Salvador/BA"
+          data-horario="Segunda a sexta, das 8h às 17h"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/caps.png" alt="CAPS">
-        <h3>CAPS</h3>
-        <p>Centros de Atenção Psicossocial, unidades de saúde que oferecem atendimento especializado em saúde mental para pessoas de todas as idades.</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+      <!-- CVV -->
+      <div
+        class="card-instituicao"
+        data-publico="todos"
+        data-tipo="online"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/cvv.png"
+            alt="Logo do CVV"
+            class="icone-instituicao"
+          >
+
+          <span class="selo azul">Online</span>
+        </div>
+
+        <h3>CVV — Centro de Valorização da Vida</h3>
+
+        <p>
+          Apoio emocional gratuito por telefone, chat e e-mail,
+          24 horas por dia.
+        </p>
+
+        <div class="tags">
+          <span>Todos os públicos</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="CVV — Centro de Valorização da Vida"
+          data-descricao="Apoio emocional e prevenção do suicídio por telefone, chat e e-mail, gratuitamente, 24 horas por dia."
+          data-telefone="188"
+          data-endereco="Atendimento online em todo o Brasil"
+          data-horario="24 horas por dia"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/projetogirassol.png" alt="Projeto Girassol">
+      <!-- Projeto Girassol -->
+      <div
+        class="card-instituicao"
+        data-publico="criancas"
+        data-tipo="presencial"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/projetogirassol.png"
+            alt="Logo do Projeto Girassol"
+            class="icone-instituicao"
+          >
+
+          <span class="selo verde">Presencial</span>
+        </div>
+
         <h3>Projeto Girassol</h3>
-        <p>ONG que atua com público infantojuvenil de baixa renda, oferecendo gratuitamente atendimento psicológico e oficinas terapêuticas nas escolas parceiras.</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+
+        <p>
+          Atendimento psicológico e oficinas terapêuticas para crianças
+          e adolescentes.
+        </p>
+
+        <div class="tags">
+          <span>Jovens</span>
+          <span>Crianças</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="Projeto Girassol"
+          data-descricao="Projeto que oferece atendimento psicológico gratuito e oficinas terapêuticas para crianças, adolescentes e famílias em situação de vulnerabilidade social."
+          data-telefone="(71) 99982-1414"
+          data-endereco="Salvador/BA"
+          data-horario="Segunda a sexta, das 8h às 17h"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/napi.png" alt="NAPI">
+      <!-- NAPI -->
+      <div
+        class="card-instituicao"
+        data-publico="estudantes"
+        data-tipo="presencial"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/napi.png"
+            alt="Logo do NAPI"
+            class="icone-instituicao"
+          >
+
+          <span class="selo verde">Presencial</span>
+        </div>
+
         <h3>NAPI</h3>
-        <p>A principal ação do NAPI é assegurar os recursos necessários à equidade nas relações e potencializando aprendizagens significativas, oferecendo apoio Psicopedagógico.</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+
+        <p>
+          Apoio psicopedagógico e inclusão social para estudantes.
+        </p>
+
+        <div class="tags">
+          <span>Estudantes</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="NAPI"
+          data-descricao="Núcleo de Apoio Psicopedagógico e Inclusão que oferece acompanhamento, orientação e apoio para estudantes e famílias."
+          data-telefone="0800 284 0212"
+          data-endereco="Salvador/BA"
+          data-horario="Atendimento mediante agendamento"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/cofam.png" alt="COFAM">
+      <!-- Centro de Orientação Familiar -->
+      <div
+        class="card-instituicao"
+        data-publico="familias"
+        data-tipo="presencial"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/cofam.png"
+            alt="Logo do Centro de Orientação Familiar"
+            class="icone-instituicao"
+          >
+
+          <span class="selo verde">Presencial</span>
+        </div>
+
         <h3>Centro de Orientação Familiar</h3>
-        <p>Associação sem fins lucrativos há 40 anos. Oferece atendimento a pessoas de baixa renda em psicoterapias.</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+
+        <p>
+          Atendimento psicoterapêutico para pessoas em situação
+          de vulnerabilidade.
+        </p>
+
+        <div class="tags">
+          <span>Famílias</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="Centro de Orientação Familiar"
+          data-descricao="Associação sem fins lucrativos que oferece psicoterapia e orientação familiar para pessoas de baixa renda."
+          data-telefone="(71) 99960-0405"
+          data-endereco="Salvador/BA"
+          data-horario="Segunda a sexta, das 8h às 17h"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/autoestimase.png" alt="Autoestima-se">
+      <!-- Rede Autoestima-se -->
+      <div
+        class="card-instituicao"
+        data-publico="mulheres"
+        data-tipo="online"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/autoestimase.png"
+            alt="Logo da Rede Autoestima-se"
+            class="icone-instituicao"
+          >
+
+          <span class="selo azul">Online</span>
+        </div>
+
         <h3>Rede Autoestima-se</h3>
-        <p>Fornecer acolhimento para jovens e mulheres de todo o Brasil de maneira online e gratuita, por meio de ações que promovam o fortalecimento da autoestima, autoconhecimento, bem-estar físico, emocional e psicossocial</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+
+        <p>
+          Apoio emocional online para jovens e mulheres em todo o Brasil.
+        </p>
+
+        <div class="tags">
+          <span>Mulheres</span>
+          <span>Jovens</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="Rede Autoestima-se"
+          data-descricao="Rede de acolhimento online para jovens e mulheres, promovendo autoestima, autoconhecimento e bem-estar emocional."
+          data-telefone="(75) 8213-3430"
+          data-endereco="Atendimento online em todo o Brasil"
+          data-horario="Atendimento mediante agendamento"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/xicamanicongo.png" alt="Xica Manicongo">
-        <h3>Centro de Serviços Xica Manicongo</h3>
-        <p>O Centro Xica Manicongo é um equipamento público dedicado à escuta qualificada, ao acolhimento humanizado e à valorização da diversidade, atuando como um espaço seguro para quem busca apoio e orientação.</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+      <!-- Centro Xica Manicongo -->
+      <div
+        class="card-instituicao"
+        data-publico="diversidade"
+        data-tipo="presencial"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/xicamanicongo.png"
+            alt="Logo do Centro Xica Manicongo"
+            class="icone-instituicao"
+          >
+
+          <span class="selo verde">Presencial</span>
+        </div>
+
+        <h3>Centro Xica Manicongo</h3>
+
+        <p>
+          Espaço seguro de acolhimento, escuta qualificada e valorização
+          da diversidade.
+        </p>
+
+        <div class="tags">
+          <span>Diversidade</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="Centro Xica Manicongo"
+          data-descricao="Espaço de acolhimento e orientação voltado para a promoção da diversidade, escuta qualificada e atendimento humanizado."
+          data-telefone="(71) 99223-9536"
+          data-endereco="Salvador/BA"
+          data-horario="Segunda a sexta, das 8h às 17h"
+        >
+          Saiba mais →
+        </button>
       </div>
 
-      <div class="ong-card">
-        <img src="img/borboletaazul.png" alt="Instituto Borboleta Azul">
-        <h3>Instituto Borboleta Azuk</h3>
-        <p>O Instituto promove Saúde Mental a jovens e suas famílias em situação de vulnerabilidade social por meio de atendimento  psicológico  gratuito e de qualidade para o enfrentamento das adversidades da vida.</p>
-        <a href="#" class="ong-button">Saiba mais</a>
+      <!-- Instituto Borboleta Azul -->
+      <div
+        class="card-instituicao"
+        data-publico="jovens"
+        data-tipo="presencial"
+      >
+        <div class="topo-card-instituicao">
+          <img
+            src="img/borboletaazul.png"
+            alt="Logo do Instituto Borboleta Azul"
+            class="icone-instituicao"
+          >
+
+          <span class="selo verde">Presencial</span>
+        </div>
+
+        <h3>Instituto Borboleta Azul</h3>
+
+        <p>
+          Atendimento psicológico gratuito para jovens e famílias
+          em vulnerabilidade.
+        </p>
+
+        <div class="tags">
+          <span>Jovens</span>
+          <span>Famílias</span>
+        </div>
+
+        <button
+          class="abrir-modal-instituicao"
+          data-nome="Instituto Borboleta Azul"
+          data-descricao="Instituto que promove saúde mental para jovens e suas famílias, oferecendo atendimento psicológico gratuito e de qualidade."
+          data-telefone="(11) 99219-5374"
+          data-endereco="Atende online em todo o Brasil"
+          data-horario="Segunda a sexta, das 8h às 17h"
+        >
+          Saiba mais →
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL INSTITUIÇÃO -->
+  <div id="modalInstituicao" class="modal">
+    <div class="conteudo-modal">
+
+      <button id="fecharModalInstituicao" class="fechar-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h3 id="nomeInstituicaoModal"></h3>
+
+      <p id="descricaoInstituicaoModal"></p>
+
+      <div class="info-modal">
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          <span id="telefoneInstituicaoModal"></span>
+        </p>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="enderecoInstituicaoModal"></span>
+        </p>
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          <span id="horarioInstituicaoModal"></span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTEÚDOS SOBRE SAÚDE MENTAL -->
+    <section id="conteudos" class="conteudos-saude">
+      <div class="container-conteudos">
+
+        <span class="tag-conteudos">
+          SABER É CUIDAR
+        </span>
+
+        <h2>
+          Conteúdos sobre saúde <br>
+          mental
+        </h2>
+
+        <p class="descricao-conteudos">
+          Informações claras e confiáveis para reconhecer sinais
+          e saber quando buscar ajuda.
+        </p>
+
+        <div class="grid-conteudos">
+
+          <article class="card-conteudo">
+            <div class="cabecalho-card">
+              <div class="icone-card">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+
+              <span>ARTIGO · 01</span>
+            </div>
+
+            <h3>Ansiedade</h3>
+
+            <p>
+              Entenda o que é, como reconhecer os sinais e estratégias
+              iniciais de cuidado.
+            </p>
+
+            <a
+              href="#"
+              class="abrir-modal-conteudo"
+              data-titulo="Ansiedade"
+              data-texto="A ansiedade é uma reação natural do corpo diante de preocupações, mudanças ou situações de pressão. Ela se torna um problema quando os sentimentos de medo, preocupação ou nervosismo são muito intensos, acontecem com frequência e começam a atrapalhar o trabalho, os estudos, o sono ou os relacionamentos. Alguns sinais comuns são pensamentos acelerados, coração acelerado, dificuldade para relaxar, irritação e sensação constante de preocupação."
+              data-dica="Respire profundamente, converse com alguém de confiança e procure ajuda profissional se os sintomas estiverem afetando sua rotina."
+            >
+              Ler artigo completo →
+            </a>
+          </article>
+
+          <article class="card-conteudo">
+            <div class="cabecalho-card">
+              <div class="icone-card">
+                <i class="fa-solid fa-moon"></i>
+              </div>
+
+              <span>ARTIGO · 02</span>
+            </div>
+
+            <h3>Depressão</h3>
+
+            <p>
+              Mais do que tristeza: a depressão é uma condição séria
+              que merece cuidado.
+            </p>
+
+            <a
+              href="#"
+              class="abrir-modal-conteudo"
+              data-titulo="Depressão"
+              data-texto="A depressão é uma condição de saúde mental que vai além da tristeza passageira. Ela pode causar desânimo constante, perda de interesse em atividades que antes eram prazerosas, cansaço excessivo, alterações no sono e no apetite e dificuldade para realizar tarefas do dia a dia. A depressão tem tratamento e buscar ajuda é um importante passo para a recuperação."
+              data-dica="Se você está se sentindo sem esperança ou desanimado por várias semanas, procure apoio de familiares, amigos ou profissionais de saúde."
+            >
+              Ler artigo completo →
+            </a>
+          </article>
+
+          <article class="card-conteudo">
+            <div class="cabecalho-card">
+              <div class="icone-card">
+                <i class="fa-solid fa-fire"></i>
+              </div>
+
+              <span>ARTIGO · 03</span>
+            </div>
+
+            <h3>Burnout e estresse</h3>
+
+            <p>
+              O esgotamento profissional e acadêmico afeta cada vez
+              mais pessoas.
+            </p>
+
+            <a
+              href="#"
+              class="abrir-modal-conteudo"
+              data-titulo="Burnout e estresse"
+              data-texto="O estresse faz parte da vida, mas quando se torna excessivo pode causar cansaço físico e emocional. O burnout é um estado de esgotamento causado principalmente por excesso de responsabilidades, pressão constante e falta de descanso. Os sinais incluem exaustão, irritabilidade, dificuldade de concentração e sensação de estar sempre sobrecarregado."
+              data-dica="Reserve momentos de descanso, estabeleça limites e procure ajuda caso o esgotamento esteja prejudicando sua saúde ou seu trabalho."
+            >
+              Ler artigo completo →
+            </a>
+          </article>
+
+          <article class="card-conteudo">
+            <div class="cabecalho-card">
+              <div class="icone-card">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+
+              <span>ARTIGO · 04</span>
+            </div>
+
+            <h3>Quando procurar ajuda</h3>
+
+            <p>
+              Sinais de que é hora de buscar acompanhamento psicológico
+              ou médico.
+            </p>
+
+            <a
+              href="#"
+              class="abrir-modal-conteudo"
+              data-titulo="Quando procurar ajuda"
+              data-texto="Buscar ajuda é importante quando emoções como tristeza, ansiedade, medo ou desânimo começam a interferir na sua rotina, nos estudos, no trabalho ou nos relacionamentos. Também é indicado procurar apoio se você estiver se sentindo sozinho, sem esperança, com dificuldade para realizar atividades do dia a dia ou enfrentando sofrimento emocional intenso."
+              data-dica="Você não precisa esperar a situação piorar para pedir ajuda. Conversar com um profissional pode fazer toda a diferença."
+            >
+              Ler artigo completo →
+            </a>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- MODAL CONTEÚDO -->
+      <div id="modalConteudo" class="modal">
+        <div class="conteudo-modal">
+
+          <button id="fecharModalConteudo" class="fechar-modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <h3 id="tituloConteudoModal"></h3>
+
+          <p id="textoConteudoModal"></p>
+
+          <div class="alerta-conteudo">
+            <i class="fa-solid fa-circle-info"></i>
+            <span id="dicaConteudoModal"></span>
+          </div>
+
+        </div>
       </div>
 
     </section>
 
-    <!-- Mental Health -->
-    <section id="guia" class="mental-section">
-        <h2>ENTENDA MAIS SOBRE SAÚDE MENTAL</h2>
-        <div class="info">
-            <h3>Saúde mental no dia a dia e aceitação dos familiares</h3>
-            <p>Cuidar da saúde mental é tão importante quanto cuidar do corpo. Mas nem sempre é fácil entender quando estamos precisando de ajuda. Às vezes nos sentimos tristes por dias, sem vontade de conversar, estudar ou fazer coisas que gostamos. Isso pode ser um sinal de que algo não vai bem emocionalmente, e tudo bem sentir isso. Se você se sente assim, saiba que você não está sozinho. Muitas pessoas também passam por isso. E existem redes de apoio, ONGs e profissionais que querem te escutar. Pedir ajuda é um sinal de força. A saúde mental é um direito de todos.</p>
+
+    <!-- SOBRE O PROJETO -->
+    <section id="sobre" class="sobre-projeto">
+      <div class="container">
+
+        <div class="sobre-texto">
+          <span class="tag-secao">
+            SOBRE O PROJETO
+          </span>
+
+          <h2>
+            Cuidar da mente é um direito de todos.
+          </h2>
+
+          <p>
+            O Inklu nasceu para conectar pessoas a instituições que oferecem
+            acolhimento psicológico gratuito ou de baixo custo. Nosso objetivo
+            é facilitar o acesso à informação e aproximar quem precisa de ajuda
+            das redes de apoio existentes.
+          </p>
+
+          <div class="numeros-sobre">
+            <div>
+              <h3>+8</h3>
+              <span>Instituições cadastradas</span>
+            </div>
+
+            <div>
+              <h3>5</h3>
+              <span>Públicos atendidos</span>
+            </div>
+          </div>
         </div>
-        <div class="bottom-text">
-            <p>Descubra ONGs e Serviços que promovem ações de escuta, acolhimento e educação emocional em diversos contextos sociais.</p>
+
+        <div class="cards-sobre">
+
+          <div class="card-sobre">
+            <h4>Missão</h4>
+
+            <p>
+              Facilitar o acesso ao cuidado emocional gratuito.
+            </p>
+          </div>
+
+          <div class="card-sobre">
+            <h4>Objetivo</h4>
+
+            <p>
+              Aproximar pessoas das instituições disponíveis.
+            </p>
+          </div>
+
+          <div class="card-sobre">
+            <h4>Impacto</h4>
+
+            <p>
+              Tornar a saúde mental mais acessível para todos.
+            </p>
+          </div>
+
+          <div class="card-sobre">
+            <h4>Compromisso</h4>
+
+            <p>
+              Informação confiável, acolhimento e inclusão.
+            </p>
+          </div>
+
         </div>
+
+      </div>
     </section>
-        
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="about-wrapper">
 
-        <div class="about-text">
-          <h2>Sobre o Inklu</h2>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+      <div class="container">
+
+        <div class="info-contato">
+          <span class="tag-secao">
+            FALE COM A GENTE
+          </span>
+
+          <h2>
+            Conhece uma instituição que deveria estar aqui?
+          </h2>
+
           <p>
-            O <strong>Inklu</strong> nasceu com o propósito de aproximar pessoas que precisam de apoio psicológico a ONGs e serviços que oferecem psicoterapia gratuita ou a baixo custo.
+            Envie sugestões, dúvidas ou parcerias.
+            Queremos ampliar nossa rede de acolhimento.
           </p>
-          <p>
-            Acreditamos que cuidar da mente não pode ser um privilégio. Nosso compromisso é tornar esse cuidado acessível, acolhedor e sem julgamentos.
-          </p>
-          <p class="email">
-            Contato: <a href="mailto:contato@inklusaudemental.org">contato@inklusaudemental.org</a>
-          </p>
+
+          <div class="lista-contato">
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              contato@inklu.com.br
+            </p>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Salvador • BA
+            </p>
+          </div>
         </div>
 
-        <form class="contact-form">
-          <h3>Fale com a gente</h3>
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+        <form class="form-contato" id="formContato">
+          <input
+            type="text"
+            id="nome"
+            placeholder="Nome"
+            required
+          >
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+          <input
+            type="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          >
 
-          <label for="message">Mensagem</label>
-          <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          <textarea
+            id="mensagem"
+            placeholder="Mensagem"
+            required
+          ></textarea>
 
-          <button type="submit">Enviar mensagem</button>
+          <button type="submit">
+            Enviar mensagem →
+          </button>
         </form>
+
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="info-faq">
+          <span class="tag-secao">
+            FAQ
+          </span>
+
+          <h2>
+            Perguntas frequentes
+          </h2>
+
+          <p>
+            Dúvidas comuns sobre atendimento psicológico gratuito,
+            funcionamento da plataforma e instituições parceiras.
+          </p>
+        </div>
+
+        <div class="accordion-faq">
+
+          <div class="item-faq">
+            <button class="pergunta-faq">
+              O atendimento das instituições é realmente gratuito?
+              <span>+</span>
+            </button>
+
+            <div class="resposta-faq">
+              Sim. Todas as instituições listadas oferecem atendimento
+              gratuito ou possuem algum tipo de apoio social.
+            </div>
+          </div>
+
+          <div class="item-faq">
+            <button class="pergunta-faq">
+              A Inklu realiza atendimentos?
+              <span>+</span>
+            </button>
+
+            <div class="resposta-faq">
+              Não. A Inklu apenas conecta você às instituições que oferecem
+              atendimento psicológico.
+            </div>
+          </div>
+
+          <div class="item-faq">
+            <button class="pergunta-faq">
+              Como sei qual instituição é melhor para meu caso?
+              <span>+</span>
+            </button>
+
+            <div class="resposta-faq">
+              Cada instituição possui um público e serviços específicos.
+              Você pode utilizar os filtros da plataforma para encontrar
+              a mais adequada.
+            </div>
+          </div>
+
+          <div class="item-faq">
+            <button class="pergunta-faq">
+              Meus dados ficam guardados na plataforma?
+              <span>+</span>
+            </button>
+
+            <div class="resposta-faq">
+              Não armazenamos informações sensíveis dos usuários.
+              Nosso objetivo é apenas facilitar o acesso às redes de apoio.
+            </div>
+          </div>
+
+          <div class="item-faq">
+            <button class="pergunta-faq">
+              Em casos de emergência?
+              <span>+</span>
+            </button>
+
+            <div class="resposta-faq">
+              Em situações de emergência emocional, procure o CVV pelo
+              telefone 188 ou o serviço de saúde mais próximo.
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-      <p>Inklu - Todos os direitos reservados</p>
-      <p>Informações sobre saúde mental</p>
-  </footer>
-  <script>
-    const toggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
 
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
+  <!-- FOOTER -->
+  <footer class="rodape">
+    <div class="container">
+
+      <div class="coluna-rodape">
+        <div class="logo-rodape">
+          <div class="logo-icone">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+
+          <span>Inklu</span>
+        </div>
+
+        <p>
+          Plataforma dedicada a conectar pessoas a instituições de apoio
+          psicossocial gratuito em Salvador/BA e online.
+        </p>
+      </div>
+
+      <div class="coluna-rodape">
+        <h4>Navegação</h4>
+
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#instituicoes">Instituições</a>
+        <a href="#conteudos">Conteúdos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="coluna-rodape">
+        <h4>Emergência</h4>
+
+        <p>CVV - 188</p>
+        <p>SAMU - 192</p>
+        <p>Disque 100 - Direitos Humanos</p>
+        <p>Disque 180 - Mulheres</p>
+      </div>
+
+      <div class="coluna-rodape">
+        <h4>Créditos</h4>
+
+        <p>
+          Projeto acadêmico de extensão universitária.
+          Os dados das instituições são públicos e podem ser atualizados
+          regularmente.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="rodape-final">
+      © 2026 Inklu — Todos os direitos reservados.
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
 </body>
 </html>
